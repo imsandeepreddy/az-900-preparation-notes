@@ -1,0 +1,95 @@
+---
+
+# Networking Basics - Summary ⚡️🌐
+
+A quick reference guide summarizing essential networking concepts from Linux Journey.
+
+---
+
+### 1. Network Basics
+
+* **ISP:** Internet Service Provider delivering internet.
+* **Router:** Connects devices to the internet via Ethernet or WiFi.
+* **WAN:** Network between router and the broader internet.
+* **WLAN:** Wireless devices connected to the router.
+* **LAN:** Wired devices connected to the router.
+* **Hosts:** Devices on the network.
+* **Packets:** Units of data transmitted across the network.
+
+---
+
+### 2. OSI Model
+
+* A theoretical 7-layer networking model.
+* Helps understand how data travels through networks.
+* TCP/IP model is based on concepts from OSI.
+
+---
+
+### 3. TCP/IP Model
+
+* Practical model powering the Internet.
+* Layers:
+
+  * **Application:** Interfaces programs with network (HTTP, SMTP).
+  * **Transport:** Manages data transfer, integrity, ports (TCP, UDP).
+  * **Network:** Routes packets between hosts (IP, ICMP).
+  * **Link:** Handles physical transmission (Ethernet, fiber).
+
+---
+
+### 4. Network Addressing
+
+* **MAC Address:** Unique, hardware-based identifier for network adapters.
+* **IP Address:** Software-based identifier for devices, varies (IPv4/IPv6).
+* **Hostnames:** Human-readable names mapped to IP addresses.
+
+---
+
+### 5. Application Layer
+
+* Data (e.g., email) is prepared and sent through application protocols like SMTP.
+* Application layer passes data to transport layer via specified ports.
+
+---
+
+### 6. Transport Layer
+
+* Breaks data into **segments**.
+* Uses **ports** to direct data to specific services.
+* Protocols:
+
+  * **UDP:** Unreliable but faster, used for streaming.
+  * **TCP:** Reliable, connection-oriented; uses 3-way handshake (SYN, SYN-ACK, ACK).
+
+---
+
+### 7. Network Layer
+
+* Routes packets between devices across networks and subnets.
+* Encapsulates segments into packets with source/destination IPs.
+* Passes packets to the Link layer for physical transmission.
+
+---
+
+### 8. Link Layer
+
+* Encapsulates packets into **frames** with source/destination MAC addresses.
+* Uses **ARP** to map IP addresses to MAC addresses within the same network.
+* Frames are sent over the physical network and received frames are de-encapsulated layer-by-layer until data reaches the application.
+
+---
+
+### 9. DHCP Overview
+
+* **DHCP** assigns IP addresses dynamically to devices.
+* Prevents manual IP conflicts.
+* Commonly handled by the router in home networks.
+* DHCP message exchange:
+
+  1. **DISCOVER** - Client searches for DHCP server.
+  2. **OFFER** - Server offers IP info.
+  3. **REQUEST** - Client accepts offer.
+  4. **ACK** - Server confirms assignment.
+
+---
